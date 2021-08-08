@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The Evolution-X Project
+# Copyright (C) 2020 The DotOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -7,16 +7,14 @@
 # Inherit from miatoll  device
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
 
-# Inherit some common Evolution-X stuff
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
-
-EVO_BUILD_TYPE := CUSTOM
+# Inherit some common DotOS stuff
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier
-PRODUCT_NAME := evolution_miatoll
+PRODUCT_NAME := dot_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Miatoll
